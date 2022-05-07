@@ -12,6 +12,8 @@
       const hostname = window.location.hostname;
       if (url.includes(hostname)) {
         url = url.replace(hostname, "undeio.com");
+      } else {
+        window.location.href = "undeio.com";
       }
       window.location.href = url;
     </script>
