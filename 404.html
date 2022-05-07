@@ -11,11 +11,11 @@
       let url = window.location.href;
       const hostname = window.location.hostname;
       if (url.includes(hostname)) {
-        url = url.replace(hostname, "undeio.com");
+        window.location.href = url.replace(hostname, "undeio.com");
       } else {
         window.location.href = "undeio.com";
       }
-      window.location.href = url;
+    //   window.location.href = url;
     </script>
   </body>
 </html>
