@@ -8,7 +8,7 @@
   </head>
   <body>
     <script>
-      let url = window.location.href;
+      const url = window.location.href;
       const hostname = window.location.hostname;
       if (url.includes(hostname)) {
         window.location.href = url.replace(hostname, "undeio.com");
