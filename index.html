@@ -11,12 +11,79 @@
       body {
         font-size: 60px;
         text-align: center;
+        writing-mode: vertical-lr;
+      }
+      a {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        line-height: 100vh;
+        writing-mode: horizontal-tb;
+        text-decoration: none;
+        background-image: -webkit-linear-gradient(
+          left,
+          green,
+          yellow,
+          pink,
+          blue,
+          red 25%,
+          green 35%,
+          blue 50%,
+          yellow 60%,
+          red 75%,
+          pink 85%,
+          blue 100%
+        );
+        background-image: -moz-linear-gradient(
+          left,
+          green,
+          yellow,
+          pink,
+          blue,
+          red 25%,
+          green 35%,
+          blue 50%,
+          yellow 60%,
+          red 75%,
+          pink 85%,
+          blue 100%
+        );
+        background-image: linear-gradient(
+          left,
+          green,
+          yellow,
+          pink,
+          blue,
+          red 25%,
+          green 35%,
+          blue 50%,
+          yellow 60%,
+          red 75%,
+          pink 85%,
+          blue 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% 100%;
+        animation: streamer 15s infinite linear;
+      }
+      @keyframes streamer {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -100% 0;
+        }
       }
     </style>
-    <p>域名已停用</p>
+    <p>此域名暂时停用</p>
+    <p>即将跳转至新域名</p>
     <p>
-      即将跳转至新域名
-      <a href="https://undeio.com" target="_blank">https://undeio.com</a>
+      <a href="https://undeio.com">undeio.com</a>
     </p>
     <script type="text/javascript">
       window.location.href = "https://undeio.com";
